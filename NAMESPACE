@@ -1,0 +1,10 @@
+export(NSN_cohorte)
+export(NSN_Descriptif)
+export(NSN_Moyenne)
+export(NSN_Proportion)
+export(NSN_RegLin)
+export(NSN_RegLog)
+export(NSN_Sensi_Speci)
+
+import(pwr)
+import(WebPower)
