@@ -5,7 +5,7 @@
   
 ***
 
- ### 1) Installation
+ ### 1) Install
 
 ```
 #Install from CRAN 
@@ -23,7 +23,7 @@ devtools::install_github("HugoMrth/NSN")
 
 ### 2) Purpose
 
-Some sample size calculation are deemed
+Some sample size calculation are apparently deemed too basic to be implemented in 'pwr' and 'webPower' packages. This will help.
 
 
 
