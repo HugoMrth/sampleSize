@@ -1,5 +1,5 @@
-\name{NSN_RegLin}
-\alias{NSN_RegLin}
+\name{SSlinearReg}
+\alias{SSlinearReg}
 %- Also NEED an '\alias' for EACH other topic documented here.
 \title{
   Calcul le nombre de sujets necessaires dans un contexte de regression lineaire
@@ -9,7 +9,7 @@
   \code{pwr.f2.test}.
 }
 \usage{
-  NSN_RegLin(R, df, mod = NULL,
+  SSlinearReg(R, df, mod = NULL,
              alpha = 0.05, power = 0.8)
 }
 %- maybe also 'usage' for other objects documented here.
@@ -58,8 +58,8 @@ Y <- c(14.6, 19.6, 18.6, 25.5, 20.4)
 
 mod <- lm(Y ~ X)
 
-NSN_RegLin(df = summary(mod)$fstatistic[2],
+SSlinearReg(df = summary(mod)$fstatistic[2],
            R = sqrt(summary(mod)$adj.r.squared))
 
-NSN_RegLin(mod)
+SSlinearReg(mod)
 }
