@@ -2,49 +2,48 @@
 \alias{SScohort}
 %- Also NEED an '\alias' for EACH other topic documented here.
 \title{
-  Calcul le nombre de sujets necessaires pour une etude de cohorte.
+  Cohort study sample size calculation
 }
 \description{
-  Retourne le nombre de patients-annees necessaires pour une etude de cohorte,
-  ainsi que le nombre total de patients (exposes et non-exposes) sur la periode de l'etude.
+Compute the recquired person-year for a cohort study along with the total number of subjects (exposed and unexposed) over the whole period.
 }
 \usage{
-  SScohort(incidence.exp, incidence.non.exp = NULL,
-              prop.traitement, fact.risque = NULL,
-              temps.etude,
+  SScohort(incidence.exp, incidence.nexp = NULL,
+              prop.treatment, risk.factor = NULL,
+              time,
               alpha = 0.05, power = 0.80)
 }
 %- maybe also 'usage' for other objects documented here.
 \arguments{
   \item{incidence.exp}{
-    Incidence attendue chez les patients exposes.
+    Expected incidence over the exposed group.
 }
-  \item{incidence.non.exp}{
-    Incidence attendue chez les patients non-exposes. Peut-etre ignore au profit de \code{fact.risque}.
+  \item{incidence.nexp}{
+Expected incidence over the unexposed group. May be ignored if \code{risk.factor} is filled in.
 }
-  \item{prop.traitement}{
-    Proportion des patients recevant le traitement.
+  \item{prop.treatment}{
+    Proportion of treated patients.
 }
   \item{fact.risque}{
-    Facteur de risque associe aux patient non-exposes, utilise si \code{incidence.non.exp = NULL} (defaut).
+Risk factor associated to unexposed patients. Used only if \code{incidence..exp = NULL}
 }
-  \item{temps.etude}{
-    Temps de l'etude (sans unite).
+  \item{time}{
+    Study time, no specific unit
 }
   \item{alpha}{
-    Risque de premiere espece. Par defaut 0.05.
+    Type I Error. Default is 0.05.
 }
   \item{power}{
-    Puissance desiree. Par defaut 0.80.
+    1 - Type II Error. Default is 0.80.
 }
 }
 \details{
 %%  ~~ If necessary, more details than the description above ~~
 }
 \value{
-    Une liste de nombre de sujets. \code{N.temps} le nombre de patients sur la duree de l'etude, \code{N} le nombre de patients annees.
-    \code{N.exp} et \code{N.non.exp} le nombre total de patients exposes et non-exposes (\code{N.exp + N.non.exp = N.temps}).
-    Toutes ces valeurs sont des entier arrondis au superieur depuis le NSN decimal calcule.
+A list containing the total number of subject over the study period (\code{N.time}), the number of person-year (\code{N}),
+the total number of exposed and unexposed patients (\code{N.exp} and \code{N.nexp}). 
+Every number is rounded up.
 }
 \references{
 %% ~put references to the literature/web site here ~
@@ -62,6 +61,6 @@
   \code{\link{SSdescriptive}}
 }
 \examples{
-SScohort(incidence.exp = 2/1000, fact.risque = 3,
-            prop.traitement = 0.3, temps.etude = 5)
+SScohort(incidence.exp = 2/1000, risk.factor = 3,
+            prop.treatment = 0.3, time = 5)
 }
