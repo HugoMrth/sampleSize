@@ -1,5 +1,5 @@
-\name{NSN_Sensi_Speci}
-\alias{NSN_Sensi_Speci}
+\name{SSsensibility}
+\alias{SSsensibility}
 %- Also NEED an '\alias' for EACH other topic documented here.
 \title{
   Calcul le nombre de sujets necessaires pour des etudes de sensibilite/specificite
@@ -8,7 +8,7 @@
   Retourne le nombre de sujets necessaire pour une etude de sensibilite/specificite.
 }
 \usage{
-  NSN_Sensi_Speci(sensi = NULL, speci = NULL, prevalence = NULL,
+  SSsensibility(sensi = NULL, speci = NULL, prevalence = NULL,
                        dropout = 0.1,
                        alpha = 0.05, precis = 0.1)
 }
@@ -58,5 +58,5 @@ Emerg Med 1996;3:895–900.
 \seealso{
 }
 \examples{
-NSN_Sensi_Speci(sensi = 0.9, speci = rep(c(0.7, 0.9), each = 4), prevalence = rep(rep(c(0.1, 0.588), each = 2), 2))
+SSsensibility(sensi = 0.9, speci = rep(c(0.7, 0.9), each = 4), prevalence = rep(rep(c(0.1, 0.588), each = 2), 2))
 }
