@@ -1,4 +1,4 @@
-NSN_Sensi_Speci <- function(sensi = NULL, speci = NULL, prevalence = NULL,
+SSsensibility <- function(sensi = NULL, speci = NULL, prevalence = NULL,
                        dropout = 0.1,
                        alpha = 0.05, precis = 0.1) {
   N <- data.frame(
@@ -18,4 +18,4 @@ NSN_Sensi_Speci <- function(sensi = NULL, speci = NULL, prevalence = NULL,
 }
 
 
-# NSN_Sensi_Speci(sensi = 0.9, speci = rep(c(0.7, 0.9), each = 4), prevalence = rep(rep(c(0.1, 0.588), each = 2), 2))
+# SSsensibility(sensi = 0.9, speci = rep(c(0.7, 0.9), each = 4), prevalence = rep(rep(c(0.1, 0.588), each = 2), 2))
