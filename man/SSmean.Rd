@@ -1,5 +1,5 @@
-\name{NSN_Moyenne}
-\alias{NSN_Moyenne}
+\name{SSmean}
+\alias{SSmean}
 %- Also NEED an '\alias' for EACH other topic documented here.
 \title{
   Calcul le nombre de sujets necessaires dans un contexte de test de moyenne
@@ -9,7 +9,7 @@
   \code{pwr.t.test}.
 }
 \usage{
-  NSN_Moyenne(m1, m2,
+  SSmean(m1, m2,
               sd1, sd2,
               sd.global = NULL,
               alpha = 0.05, power = 0.8,
@@ -64,6 +64,6 @@
   \code{\link{pwr.t.test}}
 }
 \examples{
-NSN_Moyenne(m1 = 2350, m2 = 1850,
+SSmean(m1 = 2350, m2 = 1850,
             sd1 = 250, sd2 = 400)
 }
