@@ -1,5 +1,5 @@
-\name{NSN_Descriptif}
-\alias{NSN_Descriptif}
+\name{SSdescriptive}
+\alias{SSdescriptive}
 %- Also NEED an '\alias' for EACH other topic documented here.
 \title{
   Calcul le nombre de sujets nécessaires pour une étude descritptive.
@@ -8,7 +8,7 @@
   Retourne le nombre de sujets nécessaire pour une étude descritptive.
 }
 \usage{
-  NSN_Descriptif(N.tot, e = 0.05, p = 0.5, alpha = 0.05)
+  SSdescriptive(N.tot, e = 0.05, p = 0.5, alpha = 0.05)
 }
 %- maybe also 'usage' for other objects documented here.
 \arguments{
@@ -44,9 +44,9 @@
 %% ~Make other sections like Warning with \section{Warning }{....} ~
 
 \seealso{
-  \code{\link{NSN_cohorte}}
+  \code{\link{SScohort}}
 }
 \examples{
-NSN_Descriptif(3000)
-NSN_Descriptif(10000)
+SSdescriptive(3000)
+SSdescriptive(10000)
 }
