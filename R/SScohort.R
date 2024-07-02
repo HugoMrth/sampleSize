@@ -1,4 +1,4 @@
-NSN_cohorte <- function(incidence.exp, incidence.non.exp = NULL,
+SScohort <- function(incidence.exp, incidence.non.exp = NULL,
                         prop.traitement, fact.risque = NULL,
                         temps.etude,
                         alpha = 0.05, power = 0.80) {
