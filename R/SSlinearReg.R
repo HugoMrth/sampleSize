@@ -1,4 +1,4 @@
-NSN_RegLin <- function(R = NULL, df = NULL,
+SSlinearReg <- function(R = NULL, df = NULL,
                        mod = NULL,
                        alpha = 0.05, power = 0.8) {
 
@@ -23,8 +23,8 @@ NSN_RegLin <- function(R = NULL, df = NULL,
 #
 # mod <- lm(Y ~ X)
 #
-# NSN_RegLin(df = summary(mod)$fstatistic[2],
+# SSlinearReg(df = summary(mod)$fstatistic[2],
 #            R = sqrt(summary(mod)$adj.r.squared))
 #
-# NSN_RegLin(mod)
+# SSlinearReg(mod)
 
