@@ -1,4 +1,4 @@
-NSN_RegLog <- function(p0, p1,
+SSlogisticReg <- function(p0, p1,
                        alpha = 0.05, power = 0.80,
                        alternative = "two.sided",
                        family = "Bernoulli") {
@@ -16,6 +16,6 @@ NSN_RegLog <- function(p0, p1,
 }
 
 
-# NSN_RegLog(0.75, 0.85)
-# NSN_RegLog(0.75, 0.85, family = "normal")
+# SSlogisticReg(0.75, 0.85)
+# SSlogisticReg(0.75, 0.85, family = "normal")
 
