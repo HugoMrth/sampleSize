@@ -35,10 +35,10 @@ SScohort <- function(incidence.exp, incidence.non.exp = NULL,
   N <- N.temps / temps.etude
 
   return(list(N.exp = ceiling(N.exp),
-              N.non.exp = ceiling(N.non.exp),
-              N.temps = ceiling(N.temps),
+              N.nexp = ceiling(N.non.exp),
+              N.time = ceiling(N.temps),
               N = ceiling(N)))
 }
 
-# NSN_cohorte(incidence.exp = 2/1000, fact.risque = 3,
+# SScohort(incidence.exp = 2/1000, fact.risque = 3,
 #             prop.traitement = 0.3, temps.etude = 5)
