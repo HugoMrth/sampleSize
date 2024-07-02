@@ -1,5 +1,5 @@
-\name{NSN_RegLog}
-\alias{NSN_RegLog}
+\name{SSlogisticReg}
+\alias{SSlogisticReg}
 %- Also NEED an '\alias' for EACH other topic documented here.
 \title{
   Calcul le nombre de sujets necessaires dans un contexte de regression logistique
@@ -9,7 +9,7 @@
   \code{wp.logistic}.
 }
 \usage{
-  NSN_RegLog(p0, p1,
+  SSlogisticReg(p0, p1,
              alpha = 0.05, power = 0.80,
              alternative = c("two.sided", "less", "greater"),
              family = c("Bernoulli", "exponential", "lognormal", "normal", "Poisson", "uniform"))
@@ -59,6 +59,6 @@
   \code{\link{wp.logistic}}
 }
 \examples{
-NSN_RegLog(0.75, 0.85)
-NSN_RegLog(0.75, 0.85, family = "normal")
+SSlogisticReg(0.75, 0.85)
+SSlogisticReg(0.75, 0.85, family = "normal")
 }
