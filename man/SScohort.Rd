@@ -1,5 +1,5 @@
-\name{NSN_cohorte}
-\alias{NSN_cohorte}
+\name{SScohort}
+\alias{SScohort}
 %- Also NEED an '\alias' for EACH other topic documented here.
 \title{
   Calcul le nombre de sujets necessaires pour une etude de cohorte.
@@ -9,7 +9,7 @@
   ainsi que le nombre total de patients (exposes et non-exposes) sur la periode de l'etude.
 }
 \usage{
-  NSN_cohorte(incidence.exp, incidence.non.exp = NULL,
+  SScohort(incidence.exp, incidence.non.exp = NULL,
               prop.traitement, fact.risque = NULL,
               temps.etude,
               alpha = 0.05, power = 0.80)
@@ -59,9 +59,9 @@
 %% ~Make other sections like Warning with \section{Warning }{....} ~
 
 \seealso{
-  \code{\link{NSN_Descriptif}}
+  \code{\link{SSdescriptive}}
 }
 \examples{
-NSN_cohorte(incidence.exp = 2/1000, fact.risque = 3,
+SScohort(incidence.exp = 2/1000, fact.risque = 3,
             prop.traitement = 0.3, temps.etude = 5)
 }
