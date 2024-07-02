@@ -1,4 +1,4 @@
-NSN_Proportion <- function(p1 = NULL, p2 = NULL,
+SSproportion <- function(p1 = NULL, p2 = NULL,
                            alpha = 0.05, power = 0.8,
                            alternative = "two.sided") {
 
@@ -14,4 +14,4 @@ NSN_Proportion <- function(p1 = NULL, p2 = NULL,
 }
 
 
-# NSN_Proportion(0.20, 0.22)
+# SSproportion(0.20, 0.22)
