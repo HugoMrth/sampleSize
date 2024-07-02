@@ -1,5 +1,5 @@
-\name{NSN_Proportion}
-\alias{NSN_Proportion}
+\name{SSproportion}
+\alias{SSproportion}
 %- Also NEED an '\alias' for EACH other topic documented here.
 \title{
   Calcul le nombre de sujets necessaires dans un contexte de test de proportions.
@@ -9,7 +9,7 @@
   \code{pwr.p.test} et \code{ES.h}.
 }
 \usage{
-  NSN_Proportion(p1, p2,
+  SSproportion(p1, p2,
                  alpha = 0.05, power = 0.8,
                  alternative =  = c("two.sided","less","greater"))
 }
@@ -52,5 +52,5 @@
   \code{\link{pwr.p.test}}, \code{\link{ES.h}}
 }
 \examples{
-NSN_Proportion(0.20, 0.22)
+SSproportion(0.20, 0.22)
 }
