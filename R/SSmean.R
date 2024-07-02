@@ -1,4 +1,4 @@
-NSN_Moyenne <- function(m1 = NULL, m2 = NULL,
+SSmean <- function(m1 = NULL, m2 = NULL,
                            sd1 = NULL, sd2 = NULL,
                            sd.global = NULL,
                            alpha = 0.05, power = 0.8,
@@ -27,5 +27,5 @@ NSN_Moyenne <- function(m1 = NULL, m2 = NULL,
 }
 
 
-# NSN_Moyenne(m1 = 2350, m2 = 1850,
+# SSmean(m1 = 2350, m2 = 1850,
 #             sd1 = 250, sd2 = 400)
