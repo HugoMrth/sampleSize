@@ -16,7 +16,7 @@
 install.packages("devtools")
 
 #Install MSProfileR
-devtools::install_github("HugoMrth/NSN")
+devtools::install_github("HugoMrth/sampleSize")
 
 #R may recquire a session restart in order to properly run the App : Ctrl + Shift + F10
 ```
