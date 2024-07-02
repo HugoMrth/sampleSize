@@ -1,4 +1,4 @@
-NSN_Descriptif <- function(N.tot,
+SSdescriptive <- function(N.tot,
                            e = 0.05, p = 0.5, alpha = 0.05) {
 
   #### Check Params ####
@@ -19,5 +19,5 @@ NSN_Descriptif <- function(N.tot,
 }
 
 
-# NSN_Descriptif(3000)
-# NSN_Descriptif(10000)
+# SSdescriptive(3000)
+# SSdescriptive(10000)
