@@ -2,10 +2,11 @@
 \alias{SSdescriptive}
 %- Also NEED an '\alias' for EACH other topic documented here.
 \title{
-  Calcul le nombre de sujets nécessaires pour une étude descritptive.
+  Sample size calculation for a descriptive study.
 }
 \description{
-  Retourne le nombre de sujets nécessaire pour une étude descritptive.
+  Compute the necessary sample size for a descriptive study. This must only be used if no further analysis is planned. 
+In most cases, one must assume that every 
 }
 \usage{
   SSdescriptive(N.tot, e = 0.05, p = 0.5, alpha = 0.05)
