@@ -6,7 +6,7 @@
 }
 \description{
   Compute the necessary sample size for a descriptive study. This must only be used if no further analysis is planned. 
-In most cases, one must assume that every 
+In most cases, one must assume that every answers to a dichotomous question throughout the survey will be split perfectly between the two possibilities.
 }
 \usage{
   SSdescriptive(N.tot, e = 0.05, p = 0.5, alpha = 0.05)
@@ -17,20 +17,20 @@ In most cases, one must assume that every
     Estimation de la taille de la population ciblee.
 }
   \item{e}{
-    Marge d'erreure souhaitee. Par défaut/convention \code{e = 0.05}.
+    Error margin. Default is \code{e = 0.05}.
 }
   \item{p}{
-    Prévalence estimee de l'etude. Par défaut, et si plusieurs questions, on assume \code{p = 0.5}.
+    Prevalence in the average questions of the survey, often 0.5 if no other hypothesis can be imposed. Default is \code{p = 0.5} as we assume that the survey will contains several questions.
 }
   \item{alpha}{
-    Risque de premiere espece correspondant a la taille de l'intervalle de confiance. Par défaut/convention \code{alpha = 0.05}.
+Type I error. Corresponds to the size of the confindence interval. Default is \code{alpha = 0.05}.
 }
 }
 \details{
 %%  ~~ If necessary, more details than the description above ~~
 }
 \value{
-    Le nombre de sujets nécessaire, un entier arrondi au superieur depuis la valeur decimale calculee.
+Sample size recquired as an integer. The true number is rounded p.
 }
 \references{
 %% ~put references to the literature/web site here ~
