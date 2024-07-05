@@ -25,10 +25,10 @@ An \code{lm} object that can be used instead of \code{R} and \code{df}.
 This is unusual as one muste most of the time estimate \code{R} and \code{df} from previous studies and do not have direct access to a model.
 }
   \item{alpha}{
-    Risque de premiere espece. Par defaut/convention \code{alpha = 0.05}.
+    Type I Error. Default is 0.05.
 }
   \item{power}{
-    Puissance du test minimum souhaitee dans le calcul du NSN. Par defaut/convention \code{power = 0.8}.
+    1 - Type II Error. Default is 0.80.
 }
 }
 \details{
