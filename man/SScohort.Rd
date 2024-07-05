@@ -5,7 +5,7 @@
   Cohort study sample size calculation
 }
 \description{
-Compute the recquired person-year for a cohort study along with the total number of subjects (exposed and unexposed) over the whole period.
+Compute the necessary sample size in term of person-year for a cohort study along with the total number of subjects (exposed and unexposed) over the whole period.
 }
 \usage{
   SScohort(incidence.exp, incidence.nexp = NULL,
