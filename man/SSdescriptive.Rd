@@ -1,8 +1,8 @@
-\name{SSdescriptive}
+r\name{SSdescriptive}
 \alias{SSdescriptive}
 %- Also NEED an '\alias' for EACH other topic documented here.
 \title{
-  Sample size calculation for a descriptive study.
+  Sample size determination for a descriptive study.
 }
 \description{
   Compute the necessary sample size for a descriptive study. This must only be used if no further analysis is planned. 
