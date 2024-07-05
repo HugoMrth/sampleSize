@@ -2,7 +2,7 @@
 \alias{SSlinearReg}
 %- Also NEED an '\alias' for EACH other topic documented here.
 \title{
-Sample size calculation for linear regression
+Sample size determination for linear regression
 }
 \description{
 Compute the necessary sample size for a linear regression analysis. This is based on, and improves the \code{pwr.f2.test} function from the \code{pwr} package.
