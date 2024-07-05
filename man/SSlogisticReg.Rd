@@ -2,7 +2,7 @@
 \alias{SSlogisticReg}
 %- Also NEED an '\alias' for EACH other topic documented here.
 \title{
-  Calcul le nombre de sujets necessaires dans un contexte de regression logistique
+  Sample size for logistic regression
 }
 \description{
   Retourne le nombre de sujets necessaire dans un contexte de regression logistique. Fait appel a la fonction du package \code{WebPower} :
@@ -23,10 +23,10 @@
     Probabilite que Y soit egal a un quand X est egal a 1.
 }
   \item{alpha}{
-    Risque de premiere espece. Par defaut/convention \code{alpha = 0.05}.
+    Type I Error. Default is 0.05.
 }
   \item{power}{
-    Puissance du test minimum souhaitee dans le calcul du NSN. Par defaut/convention \code{power = 0.8}.
+    1 - Type II Error. Default is 0.80.
 }
   \item{alternative}{
     Direction de l'hypothese alternative. Par defaut \code{alternative = "two.sided"}. Les autres options sont
@@ -41,7 +41,7 @@
 %%  ~~ If necessary, more details than the description above ~~
 }
 \value{
-    Le nombre de sujets nécessaire, un entier arrondi au superieur depuis la valeur decimale calculee.
+Sample size recquired as an integer. The true number is rounded up.
 }
 \references{
 %% ~put references to the literature/web site here ~
