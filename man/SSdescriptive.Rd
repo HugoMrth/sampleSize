@@ -30,7 +30,7 @@ Type I error. Corresponds to the size of the confindence interval. Default is \c
 %%  ~~ If necessary, more details than the description above ~~
 }
 \value{
-Sample size recquired as an integer. The true number is rounded p.
+Sample size recquired as an integer. The true number is rounded up.
 }
 \references{
 %% ~put references to the literature/web site here ~
