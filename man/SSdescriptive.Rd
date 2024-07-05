@@ -17,7 +17,7 @@ In most cases, one must assume that every answers to a dichotomous question thro
     Estimation de la taille de la population ciblee.
 }
   \item{e}{
-    Error margin. Default is \code{e = 0.05}.
+    The error margin, the precision of the confidence intervals. Default is \code{e = 0.05}.
 }
   \item{p}{
     Prevalence in the average questions of the survey, often 0.5 if no other hypothesis can be imposed. Default is \code{p = 0.5} as we assume that the survey will contains several questions.
