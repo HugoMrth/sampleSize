@@ -2,10 +2,10 @@
 \alias{SSsensibility}
 %- Also NEED an '\alias' for EACH other topic documented here.
 \title{
-  Sample size determination for a sensibility or sensitivity study.
+  Sample size determination for a sensibility or specificity study.
 }
 \description{
-  Compute the necessary sample size for a sensibility or sensitivity study.
+  Compute the necessary sample size for a sensibility or specificity study.
 }
 \usage{
   SSsensibility(sensi = NULL, speci = NULL, prevalence = NULL,
@@ -37,9 +37,8 @@
 %%  ~~ If necessary, more details than the description above ~~
 }
 \value{
-  Un data frame reprenant les parametres d'entree et incluant en plus les nombres de sujets necessaires (NSN)
-  pour une etude de sensibilite, de specificite, et le NSN total correspondant au maximum des deux premiers
-  après prise en compte du taux de perdus de vue. Tous les nombres de sujets sont arrondis a l'entier superieur.
+A data frame containing the original parameters along with the sample sizes recquired for a sensibility study, 
+a specificity study, and the maximum of the two. Dropout rates are taken into account. Every estimate are rounded up.
 }
 \references{
 Buderer NM. Statistical methodology: I. Incorporating the prevalence of
