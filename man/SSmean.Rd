@@ -2,7 +2,7 @@
 \alias{SSmean}
 %- Also NEED an '\alias' for EACH other topic documented here.
 \title{
-  Calcul le nombre de sujets necessaires dans un contexte de test de moyenne
+Sample size determination to underline a difference in means
 }
 \description{
   Retourne le nombre de sujets necessaire dans un contexte de test de moyenne. Fait appel a la fonction du package \code{pwr} :
