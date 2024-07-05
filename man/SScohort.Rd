@@ -2,7 +2,7 @@
 \alias{SScohort}
 %- Also NEED an '\alias' for EACH other topic documented here.
 \title{
-  Cohort study sample size calculation
+  Sample size determination for a cohort study
 }
 \description{
 Compute the necessary sample size in term of person-year for a cohort study along with the total number of subjects (exposed and unexposed) over the whole period.
