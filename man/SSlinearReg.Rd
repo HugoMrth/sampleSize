@@ -3,7 +3,6 @@
 %- Also NEED an '\alias' for EACH other topic documented here.
 \title{
 Sample size calculation for linear regression
-  Calcul le nombre de sujets necessaires dans un contexte de regression lineaire
 }
 \description{
 Compute the necessary sample size for a linear regression analysis. This is based on, and improves the \code{pwr.f2.test} function from the \code{pwr} package.
@@ -22,7 +21,7 @@ Number of degrees of freedom for the model, ie. total number of variables minus 
 }
   \item{mod}{
 An \code{lm} object that can be used instead of \code{R} and \code{df}. 
-This is unusual as one muste most of the time estimate \code{R} and \code{df} from previous studies and do not have direct access to a model.
+This is unusual as one must most of the time estimate \code{R} and \code{df} from previous studies and do not have direct access to a model.
 }
   \item{alpha}{
     Type I Error. Default is 0.05.
