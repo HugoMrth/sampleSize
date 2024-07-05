@@ -2,11 +2,11 @@
 \alias{SSlinearReg}
 %- Also NEED an '\alias' for EACH other topic documented here.
 \title{
+Sample size calculation for linear regression
   Calcul le nombre de sujets necessaires dans un contexte de regression lineaire
 }
 \description{
-  Retourne le nombre de sujets necessaire dans un contexte de regression lineaire. Fait appel a la fonction du package \code{pwr} :
-  \code{pwr.f2.test}.
+Compute the necessary sample size for a linear regression analysis. This is based on, and improves the \code{pwr.f2.test} function from the \code{pwr} package.
 }
 \usage{
   SSlinearReg(R, df, mod = NULL,
