@@ -2,11 +2,10 @@
 \alias{SSlogisticReg}
 %- Also NEED an '\alias' for EACH other topic documented here.
 \title{
-  Sample size for logistic regression
+  Sample size determination for logistic regression
 }
 \description{
-  Retourne le nombre de sujets necessaire dans un contexte de regression logistique. Fait appel a la fonction du package \code{WebPower} :
-  \code{wp.logistic}.
+Compute the necessary sample size for a logistic regression analysis. This is based on, and improves the \code{wp.logistic} function from the \code{WebPower} package.
 }
 \usage{
   SSlogisticReg(p0, p1,
@@ -17,24 +16,23 @@
 %- maybe also 'usage' for other objects documented here.
 \arguments{
   \item{p0}{
-    Probabilite que Y soit egal a un quand X est egal a 0.
+Estimated probability of Y=1 when X=0.
 }
-  \item{R}{
-    Probabilite que Y soit egal a un quand X est egal a 1.
+  \item{p1}{
+Estimated probability of Y=1 when X=1.
 }
   \item{alpha}{
-    Type I Error. Default is 0.05.
+    Significance level : Type I Error. Default is 0.05.
 }
   \item{power}{
-    1 - Type II Error. Default is 0.80.
+    Statistical power : 1 - Type II Error. Default is 0.80.
 }
   \item{alternative}{
-    Direction de l'hypothese alternative. Par defaut \code{alternative = "two.sided"}. Les autres options sont
-    \code{alternative = "less"} et \code{alternative = "greater"}.
+The alternative hypothesis. Default is \code{alternative = "two.sided"}. Other options are \code{alternative = "less"} are \code{alternative = "greater"}.
 }
   \item{family}{
-    Famille de distribution du predicteur. Par defaut \code{family = "Bernoulli"}. Les autres options sont
-    \code{"exponential", "lognormal", "normal", "Poisson", "uniform"}.
+    Distribution of the predictor ("Bernoulli","exponential", "lognormal", "normal", "Poisson", "uniform"). 
+Default is "Bernoulli".
 }
 }
 \details{
