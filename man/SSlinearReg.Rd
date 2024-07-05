@@ -15,14 +15,14 @@ Compute the necessary sample size for a linear regression analysis. This is base
 %- maybe also 'usage' for other objects documented here.
 \arguments{
   \item{R}{
-    L'estimation du coefficient de correlation du modele, ou de la racine carree du coefficient de determination.
-    Soit un chiffre comprit entre 0 et 1.
+Squared root of the estimate coefficient of determination for the model. 
 }
   \item{df}{
-    Le nombre de degre de liberte du modele, soit le nombre de variables (Y inclus) moins 1.
+Number of degrees of freedom for the model, ie. total number of variables minus one.
 }
   \item{mod}{
-    Un objet de classe \code{lm}. Si \code{mod} n'existe pas, il faut renseigner \code{R} et \code{df}.
+An \code{lm} object that can be used instead of \code{R} and \code{df}. 
+This is unusual as one muste most of the time estimate \code{R} and \code{df} from previous studies and do not have direct access to a model.
 }
   \item{alpha}{
     Risque de premiere espece. Par defaut/convention \code{alpha = 0.05}.
