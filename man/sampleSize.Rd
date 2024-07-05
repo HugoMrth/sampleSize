@@ -37,7 +37,7 @@
 }
 
 \seealso{
-  Other packages by th same authors :
+  Other packages by the same author :
 
   \code{\link{lazyMe}}, \code{\link{dataDesc}}, \code{\link{manageR}}, \code{\link{surveyscores}}, \code{\link{epiplus}}
 }
