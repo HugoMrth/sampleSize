@@ -35,7 +35,7 @@ This is unusual as one muste most of the time estimate \code{R} and \code{df} fr
 %%  ~~ If necessary, more details than the description above ~~
 }
 \value{
-    Le nombre de sujets nécessaire, un entier arrondi au superieur depuis la valeur decimale calculee.
+Sample size recquired as an integer. The true number is rounded up.
 }
 \references{
 %% ~put references to the literature/web site here ~
