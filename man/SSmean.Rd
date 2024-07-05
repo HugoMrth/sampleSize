@@ -5,8 +5,7 @@
 Sample size determination to underline a difference in means
 }
 \description{
-  Retourne le nombre de sujets necessaire dans un contexte de test de moyenne. Fait appel a la fonction du package \code{pwr} :
-  \code{pwr.t.test}.
+Compute the necessary sample size to underline a difference in means. This is based on, and improves the \code{pwr.t.test} function from the \code{pwr} package.
 }
 \usage{
   SSmean(m1, m2,
@@ -19,34 +18,34 @@ Sample size determination to underline a difference in means
 %- maybe also 'usage' for other objects documented here.
 \arguments{
   \item{m}{
-    Les parametres \code{m1} et \code{m2} sont interchangeables, et correspondent aux moyennes estimees dans
-    la population de reference et la population d'etude, ou dans les deux populations d'etude.
+    Arguments \code{m1} et \code{m2} correspond to the estimated means in the reference and the studied populations, or in the two studied populations.
+Those can be use interchangeably, but must be consistent with \code{sd1} and \code{sd2}. 
+
 }
   \item{sd}{
-    Les parametres \code{sd1} et \code{sd2} sont interchangeables, et correspondent aux ecart-types estimes dans
-    la population de reference et la population d'etude, ou dans les deux populations d'etude. Si l'ecart-type global
-    \code{sd.global} sur l'ensemble de la population est connu, il peut etre renseigne a la place.
+Arguments \code{sd1} et \code{sd2} correspond to the estimated standard deviation in the reference and the studied populations, or in the two studied populations.
+Those can be use interchangeably, but must be consistent with \code{m1} and \code{m2}. 
 }
   \item{alpha}{
-    Risque de premiere espece. Par defaut/convention \code{alpha = 0.05}.
+    Significance level : Type I Error. Default is 0.05.
 }
   \item{power}{
-    Puissance du test minimum souhaitee dans le calcul du NSN. Par defaut/convention \code{power = 0.8}.
+    Statistical power : 1 - Type II Error. Default is 0.80.
 }
   \item{type}{
-    Type de test de student effectue, par defaut \code{type = "two.sample"}.
-    Les autres possiblites sont \code{type = "less"} et \code{type = "greater"}.
+    Type of Student test to use, default is \code{type = "two.sample"}.
+    Other options are \code{type = "less"} and \code{type = "greater"}.
 }
   \item{alternative}{
-    Hypothese alternative du test, par defaut \code{alternative = "two.sided"} et l'egalite des deux proportions sera testee.
-    Les autres possiblites sont \code{alternative = "less"} et \code{alternative = "greater"}.
+The alternative hypothesis. Default is \code{alternative = "two.sided"}. Other options are \code{alternative = "less"} are \code{alternative = "greater"}.
 }
 }
 \details{
 %%  ~~ If necessary, more details than the description above ~~
 }
 \value{
-    Le nombre de sujets nécessaire, un entier arrondi au superieur depuis la valeur decimale calculee. Le N retourne correspond aux nombre de sujets PAR GROUPE.
+    Sample size recquired as an integer. The true number is rounded up.
+The specified value is the recquirement PER GROUP.
 }
 \references{
 %% ~put references to the literature/web site here ~
