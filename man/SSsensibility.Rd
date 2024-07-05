@@ -2,10 +2,10 @@
 \alias{SSsensibility}
 %- Also NEED an '\alias' for EACH other topic documented here.
 \title{
-  Calcul le nombre de sujets necessaires pour des etudes de sensibilite/specificite
+  Sample size determination for a sensibility or sensitivity study.
 }
 \description{
-  Retourne le nombre de sujets necessaire pour une etude de sensibilite/specificite.
+  Compute the necessary sample size for a sensibility or sensitivity study.
 }
 \usage{
   SSsensibility(sensi = NULL, speci = NULL, prevalence = NULL,
@@ -15,22 +15,22 @@
 %- maybe also 'usage' for other objects documented here.
 \arguments{
   \item{sensi}{
-    Estimation de la sensibilite.
+    Estimated sensibility
 }
   \item{speci}{
-    Estimation de la specificite.
+    Estimated specificity
 }
   \item{prevalence}{
-    Estimation de la prevalence.
+    Estimated prevalence
 }
   \item{dropout}{
-    Taux de perdu de vue. Par defaut/convention \code{dropout = 0.1}.
+    Expected dropout rate. Default is \code{dropout = 0.1}.
 }
   \item{alpha}{
-    Risque de premiere espece. Par defaut/convention \code{alpha = 0.05}.
+    Significance level : Type I Error. Default is 0.05.
 }
   \item{precis}{
-    Précision de l'intervalle de confiance. Par defaut/convention \code{precis = 0.1}.
+    The error margin, the precision of the confidence intervals. Default is \code{precis = 0.1}.
 }
 }
 \details{
