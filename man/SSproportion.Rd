@@ -2,11 +2,10 @@
 \alias{SSproportion}
 %- Also NEED an '\alias' for EACH other topic documented here.
 \title{
-  Calcul le nombre de sujets necessaires dans un contexte de test de proportions.
+  Sample size determination to underline a difference in proportions
 }
 \description{
-  Retourne le nombre de sujets necessaire dans un contexte de test de proportions. Fait appel aux fonctions du package \code{pwr} :
-  \code{pwr.p.test} et \code{ES.h}.
+Compute the necessary sample size to underline a difference in proportions. This is based on, and improves the \code{pwr.p.test} and \code{ES.h} functions from the \code{pwr} package.
 }
 \usage{
   SSproportion(p1, p2,
@@ -16,25 +15,25 @@
 %- maybe also 'usage' for other objects documented here.
 \arguments{
   \item{p}{
-    Les parametres \code{p1} et \code{p2} sont interchangeables, et correspondent aux proportions/prevalences estimees dans
-    la population de reference et la population d'etude.
+Arguments \code{p1} et \code{p2} correspond to the estimated prevalence in the reference and the studied populations, or in the two studied populations.
+Those can be use interchangeably.
 }
   \item{alpha}{
-    Risque de premiere espece. Par defaut/convention \code{alpha = 0.05}.
+    Significance level : Type I Error. Default is 0.05.
 }
   \item{power}{
-    Puissance du test minimum souhaitee dans le calcul du NSN. Par defaut/convention \code{power = 0.8}.
+    Statistical power : 1 - Type II Error. Default is 0.80.
 }
   \item{alternative}{
-    Hypothese alternative du test, par defaut \code{alternative = "two.sided"} et l'egalite des deux proportions sera testee.
-    Les autres possiblites sont \code{alternative = "less"} et \code{alternative = "greater"}.
+The alternative hypothesis. Default is \code{alternative = "two.sided"}. Other options are \code{alternative = "less"} are \code{alternative = "greater"}.
 }
 }
 \details{
 %%  ~~ If necessary, more details than the description above ~~
 }
 \value{
-    Le nombre de sujets nécessaire, un entier arrondi au superieur depuis la valeur decimale calculee.
+        Sample size recquired as an integer. The true number is rounded up.
+The specified value is the recquirement PER GROUP.
 }
 \references{
 %% ~put references to the literature/web site here ~
