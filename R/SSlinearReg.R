@@ -4,7 +4,7 @@ SSlinearReg <- function(R = NULL, df = NULL,
 
   #### Check Params ####
   if(is.null(mod) & (is.null(R) | is.null(df))){
-    stop("Vous devez renseigner soit le modele, soit le R du modele et le nombre de degre de liberte")
+    stop("If mod is missing, both R and df must be provided")
   }
 
   #### Code Fonction ####
