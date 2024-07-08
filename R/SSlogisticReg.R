@@ -5,7 +5,7 @@ SSlogisticReg <- function(p0, p1,
 
   #### Check Params ####
   if(is.null(p0) | is.null(p1)){
-    stop("Vous devez renseigner au minimum p0 et p1")
+    stop("p0 and p1 must be provided")
   }
 
   #### Code Fonction ####
