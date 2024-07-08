@@ -3,7 +3,7 @@ SSdescriptive <- function(N.tot,
 
   #### Check Params ####
   if(is.null(N.tot)){
-    stop("N.tot manquant")
+    stop("N.tot missing")
   }
 
   #### Code Fonction ####
