@@ -5,10 +5,10 @@ SScohort <- function(incidence.exp, incidence.non.exp = NULL,
 
   #### Check Params ####
   if(is.null(incidence.exp)){
-    stop("incidence.exp manquant")
+    stop("incidence.exp missing")
   }
   if(is.null(prop.traitement)){
-    stop("prop.traitement manquant")
+    stop("prop.traitement missing")
   }
 
   #### Code Fonction ####
