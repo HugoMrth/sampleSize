@@ -19,7 +19,7 @@
     Package: \tab  sampleSize \cr
     Type: \tab
     Package\cr
-    Version: \tab  1.0 \cr
+    Version: \tab  0.2.0 \cr
     Date: \tab  01/11/2022 \cr
     License: \tab void \cr
     LazyLoad: \tab yes\cr
