@@ -4,7 +4,7 @@ SSproportion <- function(p1 = NULL, p2 = NULL,
 
   #### Check Params ####
   if(is.null(p1) | is.null(p2)){
-    stop("Vous devez renseigner p1 et p2")
+    stop("p1 and p2 must be provided")
   }
 
   #### Code Fonction ####
