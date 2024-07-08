@@ -7,11 +7,11 @@ SSmean <- function(m1 = NULL, m2 = NULL,
 
   #### Check Params ####
   if(is.null(m1) | is.null(m2)){
-    stop("Vous devez renseigner m1 et m2")
+    stop("m1 and m3 must be provided")
   }
 
   if((is.null(sd1) | is.null(sd2)) & is.null(sd.global)){
-    stop("Vous devez renseigner soit sd1 et sd2, soit sd.global")
+    stop("If sd.global is missing, both sd1 and sd2 must be provided")
   }
 
   #### Code Fonction ####
