@@ -2,8 +2,7 @@ Package: sampleSize
 Type: Package
 Title: sampleSize
 Version: 1.0
-Authors@R: c(
-    person("Hugo", "Marthinet", email = "h.marthinet@gmail.com", role = "cre")
+Authors@R: person("Hugo", "Marthinet", email = "h.marthinet@gmail.com", role = "cre")
 Maintainer: Hugo Marthinet <h.marthinet@gmail.com>
 Description: Sample size calculations.
 License: --------
