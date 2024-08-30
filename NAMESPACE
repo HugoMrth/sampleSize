@@ -5,6 +5,8 @@ export(SSproportion)
 export(SSlinearReg)
 export(SSlogisticReg)
 export(SSsensibility)
+export(SSdiagnostic)
+export(printDiagnosticTable)
 
 import(pwr)
 import(WebPower)
