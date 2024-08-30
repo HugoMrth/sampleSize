@@ -18,13 +18,13 @@ Compute the necessary sample size for design accuracy in diagnostic test studies
 %- maybe also 'usage' for other objects documented here.
 \arguments{
   \item{prevalence}{
-
+  Estimated prevalence
 }
   \item{sens_speci}{
-
+    Estimated sensibility or specificity
 }
   \item{min_ci}{
-
+Minimal acceptable lower confidence limit
 }
   \item{alpha}{
     Type I Error. Default is 0.05.
@@ -33,7 +33,7 @@ Compute the necessary sample size for design accuracy in diagnostic test studies
     1 - Type II Error. Default is 0.80.
 }
   \item{n_cases}{
-
+Number of cases estimated from \code{printDiagnosticTable}.
 }
 }
 \details{
