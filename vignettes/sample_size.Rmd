@@ -29,7 +29,7 @@ options(tibble.print_min = 4L, tibble.print_max = 4L)
 library(sampleSize)
 ```
 
-This packages provides sample size calculation functions for various designs not provided in **pwr* and **webPower** packages.
+This packages provides sample size calculation functions for various designs not provided in **pwr** and **webPower** packages.
 Every sample size calculation requires some kind of estimation. One must, wether it is from the literature, previous studies or field experts, provide some estimation of 
 parameters of interest. This parameters vary depending on the study design and can be quite hard to determine in some cases.
 Based on this assumption, sample size calculation in itself is only an estimation ; this should not be neglected when it comes to the analysis. 
