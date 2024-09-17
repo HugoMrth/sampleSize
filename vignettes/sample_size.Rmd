@@ -30,12 +30,85 @@ library(sampleSize)
 ```
 
 This packages provides sample size calculation functions for various designs not provided in **pwr* and **webPower** packages.
+Every sample size calculation requires some kind of estimation. One must, wether it is from the literature, previous studies or field experts, provide some estimation of 
+parameters of interest. This parameters vary depending on the study design and can be quite hard to determine in some cases.
+Based on this assumption, sample size calculation in itself is only an estimation ; this should not be neglected when it comes to the analysis. 
+Loose parameters estimation will lead to weak analysis.
+
+
+## Descriptive study
+
+One usually only use sample size determination in a descriptive study context whenever no further statistical analysis are planned, or when no assumptions are made over the study whatsoever.
+In this case, one should assume the hypothesis that every answer to the survey will be evenly distributed among the possible answers.
+This function thus should only be used as a last resort if no other calculation fit the study design. In this case, the only parameter to estimate in the size of the studied population.
+
+```{r, message = FALSE}
+sampleSize::SSdescriptive(70000000)
+
+sampleSize::SSdescriptive(70000000, e = 0.01)
+```
+
+When the size of error margin is 5%, the sample size is soft caped at 400, even when considering the whole french population of roughly 70 million people.
+However, this quickly skyrocket whenever the error margin is reduced.
 
 ## Cohort study
 
+Using the example of a disease affecting 0.2% of the exposes population, and 0.6% of the unexposed population (risk factor of 3 in the unexposed group).
+If the cohort is planned to last 5 years and 30% of the patients inclued are to receive the treatment, the sample size calcultaion is as follow :
 
 ```{r, message = FALSE}
-SScohort(incidence.exp = 2/1000, fact.risque = 3,
-#             prop.traitement = 0.3, temps.etude = 5)
+# Using the risk.factor parameter
+SScohort(incidence.exp = 2/1000, risk.factor = 3,
+         prop.treatment = 0.3, time = 5)
+
+# Using the incidence.nexp parameter
+SScohort(incidence.exp = 2/1000, incidence.nexp = 6/1000, 
+         prop.treatment = 0.3, time = 5)
 ```
 
+At least 1743 patients/year should be included.
+
+## Means, proportions and others
+
+All of the study below roughly require the same parameters estimation of the study population : means, proportions, prevalence... in the different groups.
+This is always paired with **alpha**, **power** and an **alternative hypothesis**. Examples below are from real case study :
+
+```{r, message = FALSE}
+# Proportion study
+# 20% prevalence in treated group versus 22% in the untreated group
+# Prevalence are estimated from a pre-study
+SSproportion(0.20, 0.22)
+
+# Mean study 
+# Calories consumption : average of 2350 in males, 1850 in females
+# Means and standard deviation are estimated from previous studies
+SSmean(m1 = 2350, m2 = 1850, sd1 = 250, sd2 = 400)
+
+# Sensibility study
+# Sample size requirment to proove the new screening test is more efficatious then the previous one
+# Known sensibility and psecificity of the previous screening test of 90%, prevalence estimated by experts of 55%
+SSsensibility(sensi = 0.9, speci = 0.9, prevalence = 0.55)
+```
+
+## Linear and logistic regressions
+
+Functions is this section do exist in other packages, but the version provided here are more user friendly. Linear and logistic regression study sample size calculation are quite 
+straight forward and require few estimation. This is, in a linear regression, only the R estimation, and prevalence in both group fro the logsitic regression.
+
+```{r, message = FALSE}
+# Linear regression
+# Data from,previous study
+X <- c(46.8, 48.7, 48.4, 53.7, 56.7)
+Y <- c(14.6, 19.6, 18.6, 25.5, 20.4)
+
+mod <- lm(Y ~ X)
+SSlinearReg(df = summary(mod)$fstatistic[2],
+            R = sqrt(summary(mod)$adj.r.squared))
+SSlinearReg(mod)
+
+
+
+# Logistic regression
+# Expert estimation
+SSlogisticReg(0.75, 0.85, family = "normal")
+```
