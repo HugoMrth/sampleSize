@@ -25,7 +25,7 @@ Expected incidence over the unexposed group. May be ignored if \code{risk.factor
     Proportion of treated patients.
 }
   \item{fact.risque}{
-Risk factor associated to unexposed patients. Used only if \code{incidence..exp = NULL}
+Risk factor associated to unexposed patients. Used only if \code{incidence.nexp = NULL}
 }
   \item{time}{
     Study time, no specific unit
