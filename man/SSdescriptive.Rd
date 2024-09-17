@@ -1,4 +1,4 @@
-r\name{SSdescriptive}
+\name{SSdescriptive}
 \alias{SSdescriptive}
 %- Also NEED an '\alias' for EACH other topic documented here.
 \title{
