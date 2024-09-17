@@ -41,4 +41,4 @@ SScohort <- function(incidence.exp, incidence.nexp = NULL,
 }
 
 # SScohort(incidence.exp = 2/1000, risk.factor = 3,
-#             prop.traitement = 0.3, time = 5)
+#             prop.treatment = 0.3, time = 5)
