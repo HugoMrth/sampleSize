@@ -60,5 +60,5 @@ mod <- lm(Y ~ X)
 SSlinearReg(df = summary(mod)$fstatistic[2],
            R = sqrt(summary(mod)$adj.r.squared))
 
-SSlinearReg(mod)
+SSlinearReg(mod = mod)
 }
