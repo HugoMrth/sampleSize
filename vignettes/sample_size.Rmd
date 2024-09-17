@@ -29,9 +29,11 @@ options(tibble.print_min = 4L, tibble.print_max = 4L)
 library(sampleSize)
 ```
 
-This packages provides sample size calculation functions for various designs not provided in **pwr** and **webPower** packages.
-Every sample size calculation requires some kind of estimation. One must, wether it is from the literature, previous studies or field experts, provide some estimation of 
-parameters of interest. This parameters vary depending on the study design and can be quite hard to determine in some cases.
+This packages provides sample size calculation functions for various designs not provided in **pwr** and **webPower** packages. \
+
+Every sample size calculation requires some kind of estimation. One must, whether it is from the literature, previous studies or field experts, provide some estimation of 
+parameters of interest. This parameters vary depending on the study design and can be quite hard to determine in some cases. \
+
 Based on this assumption, sample size calculation in itself is only an estimation ; this should not be neglected when it comes to the analysis. 
 Loose parameters estimation will lead to weak analysis.
 
@@ -39,7 +41,7 @@ Loose parameters estimation will lead to weak analysis.
 ## Descriptive study
 
 One usually only use sample size determination in a descriptive study context whenever no further statistical analysis are planned, or when no assumptions are made over the study whatsoever.
-In this case, one should assume the hypothesis that every answer to the survey will be evenly distributed among the possible answers.
+In this case, one should assume the hypothesis that every answer to the survey will be evenly distributed among the possible answers.\
 This function thus should only be used as a last resort if no other calculation fit the study design. In this case, the only parameter to estimate in the size of the studied population.
 
 ```{r, message = FALSE}
@@ -49,7 +51,7 @@ sampleSize::SSdescriptive(70000000, e = 0.01)
 ```
 
 When the size of error margin is 5%, the sample size is soft caped at 400, even when considering the whole french population of roughly 70 million people.
-However, this quickly skyrocket whenever the error margin is reduced.
+However, this quickly skyrockets whenever the error margin is reduced.
 
 ## Cohort study
 
@@ -70,7 +72,7 @@ At least 1743 patients/year should be included.
 
 ## Means, proportions and others
 
-All of the study below roughly require the same parameters estimation of the study population : means, proportions, prevalence... in the different groups.
+All of the study below roughly require the same parameters estimation of the study population : means, proportions, prevalence... in the different groups. \
 This is always paired with **alpha**, **power** and an **alternative hypothesis**. Examples below are from real case study :
 
 ```{r, message = FALSE}
