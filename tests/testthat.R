@@ -1,4 +1,4 @@
 library(testthat)
-library(pkg)
+library(sampleSize)
 
 test_check("sampleSize")
