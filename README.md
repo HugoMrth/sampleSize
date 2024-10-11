@@ -1,4 +1,6 @@
-# manageR
+<p align="center">
+<img src="inst/logo.png" height="200"/> 
+</p>
 
 ## Sample size determination
   
