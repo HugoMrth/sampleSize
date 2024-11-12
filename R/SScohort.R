@@ -4,19 +4,12 @@ SScohort <- function(incidence.exp, incidence.nexp = NULL,
                         alpha = 0.05, power = 0.80) {
 
   #### Check Params ####
-  if(is.null(incidence.exp)){
-    stop("incidence.exp missing")
-  }
-  if(is.null(prop.treatment)){
-    stop("prop.treatment missing")
-  }
+  if(is.null(incidence.exp)) stop("incidence.exp missing")
+  if(is.null(prop.treatment)) stop("prop.treatment missing")
 
   #### Code Fonction ####
-
   #Gestion cas incidence non exp vs facteur de risque
-  if (is.null(incidence.nexp)) {
-    incidence.nexp <- incidence.exp * risk.factor
-  }
+  if (is.null(incidence.nexp)) incidence.nexp <- incidence.exp * risk.factor
 
   #Calcul des paramètres
   d <- abs(incidence.exp - incidence.nexp)
@@ -39,6 +32,3 @@ SScohort <- function(incidence.exp, incidence.nexp = NULL,
               N.time = ceiling(N.temps),
               N = ceiling(N)))
 }
-
-# SScohort(incidence.exp = 2/1000, risk.factor = 3,
-#             prop.treatment = 0.3, time = 5)

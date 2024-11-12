@@ -6,13 +6,9 @@ SSmean <- function(m1 = NULL, m2 = NULL,
                            alternative = "two.sided") {
 
   #### Check Params ####
-  if(is.null(m1) | is.null(m2)){
-    stop("m1 and m3 must be provided")
-  }
+  if(is.null(m1) | is.null(m2)) stop("m1 and m2 must be provided")
+  if((is.null(sd1) | is.null(sd2)) & is.null(sd.global)) stop("If sd.global is missing, both sd1 and sd2 must be provided")
 
-  if((is.null(sd1) | is.null(sd2)) & is.null(sd.global)){
-    stop("If sd.global is missing, both sd1 and sd2 must be provided")
-  }
 
   #### Code Fonction ####
   if(!is.null(sd1) & !is.null(sd2)) {
@@ -26,6 +22,3 @@ SSmean <- function(m1 = NULL, m2 = NULL,
                                      alternative = alternative)$n))
 }
 
-
-# SSmean(m1 = 2350, m2 = 1850,
-#             sd1 = 250, sd2 = 400)

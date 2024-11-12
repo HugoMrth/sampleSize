@@ -19,12 +19,12 @@ Compute the necessary sample size to underline a difference in means. This is ba
 \arguments{
   \item{m}{
     Arguments \code{m1} et \code{m2} correspond to the estimated means in the reference and the studied populations, or in the two studied populations.
-Those can be use interchangeably, but must be consistent with \code{sd1} and \code{sd2}. 
+Those can be use interchangeably, but must be consistent with \code{sd1} and \code{sd2}.
 
 }
   \item{sd}{
 Arguments \code{sd1} et \code{sd2} correspond to the estimated standard deviation in the reference and the studied populations, or in the two studied populations.
-Those can be use interchangeably, but must be consistent with \code{m1} and \code{m2}. 
+Those can be use interchangeably, but must be consistent with \code{m1} and \code{m2}.
 }
   \item{alpha}{
     Significance level : Type I Error. Default is 0.05.
@@ -63,6 +63,5 @@ The specified value is the recquirement PER GROUP.
   \code{\link{pwr.t.test}}
 }
 \examples{
-SSmean(m1 = 2350, m2 = 1850,
-            sd1 = 250, sd2 = 400)
+SSmean(m1 = 2350, m2 = 1850, sd1 = 250, sd2 = 400)
 }
